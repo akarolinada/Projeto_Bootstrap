@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html lang="ept-br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[nome teporário | Botão de Start]</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Big Shoulders Display", cursive;
+            /* height: 100px; */
+            /* width: auto; */
+            /* position: absolute; */
+            background-color: black;
+            display: grid;
+            place-items: center;
+            
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            /* overflow: hidden; */
+            background-image: url(img/Loading_Background_2.gif);      
+            background-size: contain;
+            background-repeat: no-repeat;  
+            background-position: center center;
+            /* position: absolute;           */
+        }
+
+        .banner #content {
+            position: relative;
+            /* z-index: 1; */
+            max-width: 1000px;
+            margin: 0 auto;
+            top: 120px;
+            text-align: center;
+            margin-top: 400px;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: limegreen;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #f8f9fa;
+        }
+        
+        button {
+            font-family: 'Press Start 2P', cursive;
+            background-color: transparent !important;
+            box-shadow: 1px 1px 2px 2px limegreen;
+            /* zoom: 150%; */
+            animation: blinker 1.5s linear infinite;
+        }
+
+        button:hover {
+            background-color: limegreen !important;
+            color: #f8f9fa !important;
+            border-color: limegreen !important;
+            box-shadow: 1px 1px 2px 2px gray;
+        }
+    </style>
 </head>
+
 <body>
-    
+        <div class="banner">
+            <div id="content"></div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(() => {
+
+            //Agora, conseguimos inserir o novo elemento a um elemento existente. Este código encontra um elemento existente, no caso cada a <div>:
+            var apendBotao = document.getElementById("content");
+
+            //Este código cria um novo <button> elemento:
+            var novoBotao = document.createElement("button");
+
+           
+            novoBotao.className = "btn btn-light btn-md";
+
+            //Este código adiciona o novo elemento ao elemento existente:
+            apendBotao.appendChild(novoBotao);
+          
+            var a = document.createElement("a")
+            a.innerHTML = "PRESS &female; START";
+            a.setAttribute("href", "pages/home.html")
+            novoBotao.appendChild(a)
+            
+        }, 6700)
+    </script>
 </body>
+
 </html>
