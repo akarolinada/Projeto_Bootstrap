@@ -114,7 +114,7 @@ $(document).ready(function () {
     document.querySelector(".botao1").addEventListener("click", function trocarCard() {
         c.style.display = "none";
         a.style.display = "inline-block";
-        b.style.display = "flex";
+        b.style.display = "inline-block";
         this.disabled = true;
         document.querySelector(".botao2").disabled = false;
     });
