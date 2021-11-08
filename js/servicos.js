@@ -176,7 +176,7 @@ function aparecerCarrinho() {
                 <div class="row">
                 <!-- coluna da imagem -->
                 <div class="col-lg-2 col-md-3 col-sm-4">
-                    <img src="..img/${item.descricao}.png" class="img-thumbnail">
+                    <img src="../img/imgServico/${item.descricao}.png" class="img-thumbnail">
                 </div>
                 <!-- coluna da descrição-->
                 <!-- align-self-center -->
@@ -206,7 +206,7 @@ function aparecerCarrinho() {
         <li class="list-group-item my-2 py-3">
             <div class="text-end fw-bold">
                 <p>Valor Total: R$ ${totalCarrinho},00</p>
-                <a href="" class="btn btn-primary btn-sm">Continuar Comprando</a>
+                <a href="../pages/servicos.html" class="btn btn-primary btn-sm">Continuar Comprando</a>
             </div>
         </li>
     </ul>
