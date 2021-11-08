@@ -132,6 +132,48 @@
             <!-- <div class="row">Sofreu ou presenciou algum assédio nos jogos?<button>Denuncie aqui</button></div> -->
         </div>
 
+        <h4 class="text-center">Sofreu ou presenciou algum assédio durante os jogos?</h4>
+        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Denuncie Aqui
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Denuncie Anonimamente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        <div class="row mb-3 d-flex flex-wrap flex-column">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Plataforma:</label>
+                            <div class="col-sm-10">
+                              <input type="url" class="form-control form-control-sm  text-center" id="colFormLabelSm plat" placeholder="Adicione o link de onde ocorreu o assédio.">
+                            </div>
+                          </div>
+                          <div class="row mb-3 d-flex flex-wrap flex-column">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm">Email:</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control  text-center" id="colFormLabel mail" placeholder="Email não obrigatório.">
+                            </div>
+                          </div>
+                          <div class="row d-flex flex-wrap flex-column">
+                            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-sm">Ocorrido:</label>
+                            <div class="col-sm-10">
+                              <textarea class="form-control text-center" id="colFormLabelLg ocor" style="height: 13vh;" placeholder="Nos conte em detalhes o que aconteceu. Sua segurança em primeiro lugar. Você não está sozinha!"></textarea>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="submit" id="denuncia" class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
         <!-- Parceiros -->
 
         <h2 class="mt-5 mb-5 text-center text-white">Parceiros</h2>
