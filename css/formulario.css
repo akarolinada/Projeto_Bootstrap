@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap%27');
-
 * {
     margin: 0px;
     padding: 0px;
@@ -10,40 +9,53 @@ body {
     background-color: #170F1F;
 }
 
-/************************************ Mudança de classes bootstrap *****************************************/
+/*************************************************************** HEADER NAV ***********************************************************/
 
-.bg-dark{   /********************** BODY ********************/
+/************************ Alteração cor botão sanduiche toggle bootstrap ***************************/
+
+.bg-dark{   /** BODY **/
     background-color: #170F1F!important;
 }
 .bg-light{
     background-color: #BF7EFF!important;
 }
-/*************************************************************** HEADER NAV ***********************************************************/
-/************************ Alteração cor botão sanduiche toggle bootstrap ***************************/
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 15, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .custom-toggler .navbar-toggler {
-    /* border-color: rgba(191, 126, 255, 1); */ /*Lilás*/
-    border-color: rgba(23, 15, 31, 1); /*Preto*/
+    /* border-color: rgba(191, 126, 255, 1); */
+    /*Lilás*/
+    border-color: rgba(23, 15, 31, 1);
+    /*Preto*/
 }
+
 .navbar-toggler {
     padding: 9px 9px;
-    /* border: 3px solid #BF7EFF; */ /*Lilás*/
-    border: 3px solid #170F1F; /*Preto*/
+    /* border: 3px solid #BF7EFF; */
+    /*Lilás*/
+    border: 3px solid #170F1F;
+    /*Preto*/
     border-radius: 20rem;
-    /* color: #BF7EFF; */ /*Lilás*/
+    /* color: #BF7EFF; */
+    /*Lilás*/
     color: #170F1F;
 }
+
 .navbar-dark .navbar-toggler {
     /* color: #BF7EFF;
-    border-color: #BF7EFF; */ /*Lilás*/
-    color: #170F1F; /*Preto*/
-    border-color: #170F1F; /*Preto*/
+        border-color: #BF7EFF; */
+    /*Lilás*/
+    color: #170F1F;
+    /*Preto*/
+    border-color: #170F1F;
+    /*Preto*/
     border: 2px solid;
 }
 
 /************************* Links da Nav **************************/
+
 .nav-link {
     justify-content: right;
     display: flex;
@@ -51,31 +63,48 @@ body {
     color: #170F1F !important;
     font-weight: bold;
 }
+
 /***************************************************************** FOOTER ***********************************************************/
+
 .pay {
     width: 60px;
     padding-bottom: 10px;
     padding-left: 7px;
 }
+
 .social {
-    width: 45px!important;
     margin-left: 10px;
-    
 }
-footer{
+
+footer {
     background-color: #BF7EFF;
     color: #170F1F;
 }
-.bdFt{
+
+.nav-ft {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bdFt {
     border-top: 2px solid #20db20!important;
 }
 
 /* Margin Top e Bottom para separação de elementos na página */
-.marT{
+
+.marT {
     margin-top: 70px;
 }
-.marB{
+
+.marB {
     margin-bottom: 70px;
+}
+
+@media(max-width: 767px) {
+    .social {
+        padding-bottom: 20px;
+    }
 }
 
 /* Ajuste do top do  carousel */
@@ -120,7 +149,7 @@ main {
 /* Estilização da div que vai conter as imagens postadas */
 
 #img-view {
-    width: 15rem;
+    width: 13rem;
     height: 17rem;
     background-image: linear-gradient(to top, rgba(34, 241, 34, 0.82), rgba(191, 126, 255, 1));
     padding: 7px;
@@ -169,6 +198,7 @@ main {
     border: none;
     border-radius: 50px;
 }
+
 .btn-primary:hover {
     background: rgba(191, 126, 255);
     box-shadow: 0px 0px 10px 10px #22F122;
@@ -192,4 +222,8 @@ main {
 
 .editedel {
     width: 20%;
+}
+
+.thead {
+    background-color: #ded4e9 !important;
 }
