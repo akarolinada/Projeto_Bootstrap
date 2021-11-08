@@ -31,7 +31,7 @@ class Streamer {
         streamer.plataforma = $("#plataforma").val();
         if ($("#inputFoto").val() != "") {
             let nomeFile = $("#inputFoto")[0].files[0].name;
-            streamer.picture = "/img/imgform/" + nomeFile;
+            streamer.picture = "../img/imgform/" + nomeFile;
         } else {
             streamer.picture = "";
         }
@@ -42,7 +42,7 @@ class Streamer {
     limpar() {
         $("#inputFoto").val("");
         let img = document.getElementById("img-show");
-        img.src = "/img/imgform/spaceimg.png";
+        img.src = "../img/imgform/spaceimg.png";
     }
 
     //Validação dos campos dos inputs (para impedir campos vazios)
@@ -111,7 +111,7 @@ class Streamer {
             <td>${this.streamers[i].nick}</td>
             <td><a href="${this.streamers[i].link}">${this.streamers[i].link}</td>
             <td>${this.streamers[i].plataforma}</td>
-            <td><img src="/img/imgform/editar.png" class="editedel" id="edite${i}"><img src="/img/imgform/deletar.png" class="editedel" id="del${i}"></td>
+            <td><img src="../img/imgform/editar.png" class="editedel" id="edite${i}"><img src="../img/imgform/deletar.png" class="editedel" id="del${i}"></td>
           </tr>`
 
             let editId = "edite" + i;
@@ -159,7 +159,7 @@ class Streamer {
                 this.streamers[i].plataforma = $("#plataforma").val();
                 if ($("#inputFoto").val() != "") {
                     let nomeFile = $("#inputFoto")[0].files[0].name;
-                    this.streamers[i].picture = "/img/imgform/" + nomeFile;
+                    this.streamers[i].picture = "../img/imgform/" + nomeFile;
                 } else {
                     this.streamers[i].picture = "";
                 }
