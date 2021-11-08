@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/************************************ Mudança de classes bootstrap *****************************************/
+
+.bg-dark{   /********************** BODY ********************/
+    background-color: #170F1F!important;
+}
+.bg-light{
+    background-color: #BF7EFF!important;
+}
+/********************** BUTTONS *******************/
+.btn-primary {
+    color: #170F1F;
+    background: rgba(34, 241, 34, 0.82);
+    box-shadow: 0px 0px 7px 7px #BF7EFF;
+    filter: blur(0.5px);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold!important;
+}
+.btn-primary:hover {
+    background: rgba(191, 126, 255);
+    border: none;
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+    font-weight: bold!important;
+}
+.btn-primary:focus {
+    background: rgba(191, 126, 255);
+    border: none;
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+    font-weight: bold!important;
+}
+
+.text-dark {
+    color: #170F1F;
+}
+
+/*************************************************************** HEADER NAV ***********************************************************/
+/************************ Alteração cor botão sanduiche toggle bootstrap ***************************/
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 15, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.custom-toggler .navbar-toggler {
+    /* border-color: rgba(191, 126, 255, 1); */ /*Lilás*/
+    border-color: rgba(23, 15, 31, 1); /*Preto*/
+}
+.navbar-toggler {
+    padding: 9px 9px;
+    /* border: 3px solid #BF7EFF; */ /*Lilás*/
+    border: 3px solid #170F1F; /*Preto*/
+    border-radius: 20rem;
+    /* color: #BF7EFF; */ /*Lilás*/
+    color: #170F1F;
+}
+.navbar-dark .navbar-toggler {
+    /* color: #BF7EFF;
+    border-color: #BF7EFF; */ /*Lilás*/
+    color: #170F1F; /*Preto*/
+    border-color: #170F1F; /*Preto*/
+    border: 2px solid;
+}
+ 
+/************************* Links da Nav **************************/
+.nav-link {
+    justify-content: right!important;
+    display: flex!important;
+    margin-right: 10px!important;
+    color: #170F1F !important;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    text-align: right;
+}
+
+
+
+/* .barAcess {
+    position: fixed;
+    float: right;
+} */
+/******************************************************** FIM NAV PADRÃO PAGS ***************************************************/
+
+/*********************** Banner ************************/
+.rowNav{
+    height: 90vh;
+}
+.div-img {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+/* Imagem Banner */
+.banner-main {
+    background-color: var(--main-color);
+    height: 90vh;
+    background-image: URL(../img/home/hd-sh.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.btn-banner {
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+.p-banner {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+/*********************************************************************** CONTEÚDO ***********************************************************************/
+
+
+
+/************************ DESTAQUES PRIMEIRA LINHA **********************/
+.borda {
+    width: 30rem;
+    height: 30rem;
+    background-image: linear-gradient(to top, rgba(34, 241, 34, 0.82), rgba(191, 126, 255, 1));
+    padding: 7px;
+    border-radius: 0 60px;
+}
+.imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 60px;
+}
+.des1{
+    background-image: url(../img/home/Destaques/streamer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.des2{
+    background-image: url(../img/home/Destaques/loja1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 45%;
+}
+
+/************************ DESTAQUES NOTÍCIAS SEGUNDA LINHA **********************/
+.bordaN{
+    width: 18rem;
+    height: 18rem;
+    background-image: linear-gradient(to top, rgba(34, 241, 34, 0.82), rgba(191, 126, 255, 1));
+    padding: 6px;
+    border-radius: 0 35px;
+}
+.news{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 35px;
+}
+.news1{
+    background-image: url(../img/home/News/news1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news2{
+    background-image: url(../img/home/News/news2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news3{
+    background-image: url(../img/home/News/news3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***************************************************************** FOOTER ***********************************************************/
+.pay {
+    width: 60px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+.social {
+    margin-left: 10px;
+    
+}
+footer{
+    background-color: #BF7EFF;
+    color: #170F1F;
+}
+.nav-ft{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.bdFt{
+    border-top: 2px solid #20db20!important;
+}
+
+/* Margin Top e Bottom para separação de elementos na página */
+.marT{
+    margin-top: 70px;
+}
+.marB{
+    margin-bottom: 70px;
+}
+/***************************************************************** FIM FOOTER PADRÃO PAGS ***********************************************************/
+
+
+/************************************************************************ RESPONSIVIDADE ********************************************************************/
+
+@media (max-width: 950px) {
+   
+}
+
+@media(max-width: 899px){
+     .banner-main {
+        background-image: URL(../img/home/banner-md.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .social {
+        padding-bottom: 20px;
+    }
+}

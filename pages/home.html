@@ -1,11 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <title>Gamer Girl | Home</title>
+    
+  </head>
+
+  <body class="bg-dark text-white">
+      <!-- Header com Nav -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-xxxl navbar-dark p-md-3 bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="home.html"><img src="../img/logo.png" alt=""></a>
+          <button
+            class="custom-toggler navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="formulário.html">Espaço Streamer</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="servicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Loja</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item nav-link" href="" >Nossa Loja</a></li>
+                    <li><a class="dropdown-item nav-link" href="" >Carrinho</a></li>
+                  </ul>
+                </li>-->
+                <li class="nav-item"> 
+                    <a class="nav-link" href="servicos.html">Loja</a>
+                  </li>
+                <li class="nav-item"> 
+                  <a class="nav-link" href="institucional.html">Institucional</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner do Header-->
+
+      <div class="container-fluid banner-main">
+        <div class="container-fluid pt-5">
+            <div class="row rowNav align-items-center">
+                <div id="divBanner"></div>
+                <div class="col-lg-4 col-12 d-flex flex-wrap justify-content-center text-white">
+                    <h1 class="text-white text-center">Juntas por todas</h1>
+                    <p class="p-banner text-white text-center">Desde 2021, moldando o mundo dos jogos para uma realidade mais justa e igualitárias para as mulheres </p>
+                    <button class="btn btn-primary btn-main btn-banner mt-3"><a class="text-decoration-none text-dark" href="institucional.html">Sobre Nós</a></button>
+                </div>
+                <div id="divNo" class="col-lg-8"></div>
+            </div>
+        </div>
+      </div>      
+    </header>
+
+    <!-- Acessibilidade -->
+    <!-- <div class="barAcess">
+        <img src="/img/mais.png" onclick="fonte('a')">
+        <img src="/img/menos.png" onclick="fonte('d')">
+    </div> -->
+
+    <!-- Conteúdo da Página -->
+    
+
+    <section class="marT marB container-fluid d-flex flex-column justify-content-center align-items-center">
+
+        <!-- Destaque Streamer e Loja -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 p-2 d-flex justify-content-center will-fadeIn">
+                    <a href="formulário.html">
+                        <div class="borda">
+                            <div class="imagem des1">
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    <div class="col-lg-6 p-2 d-flex justify-content-center will-fadeIn">
+                        <a href="servicos.html">
+                            <div class="borda">
+                                <div class="imagem des2">
+                            
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Destaque Notícias -->
+
+        <div class="marT marB container">
+            <div class="row"><h2 class="mt-5 mb-5 text-center text-white">Notícias em Destaque</h2></div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 col-md-12 p-2 d-flex justify-content-center will-fadeIn"><div class="bordaN"><a href="https://www.uol.com.br/universa/noticias/redacao/2021/10/22/ciberatleta-cria-associacao-de-apoio-as-mulheres-nos-jogos-eletronicos.htm" target="_"><div class="news news1"></div></div></a></div>
+
+                <div class="col-lg-4 col-sm-12 col-md-12 p-2 d-flex justify-content-center will-fadeIn"><div class="bordaN"><a href="https://olhardigital.com.br/2021/05/23/games-e-consoles/mulheres-gamers-escondem-genero-assedio-pesquisa/" target="_"><div class="news news2"></div></div></a></div>
+
+                <div class="col-lg-4 col-sm-12 col-md-12 p-2 d-flex justify-content-center will-fadeIn"><div class="bordaN"><a href="https://pt.ign.com/games/104719/editorial/a-ascensao-das-mulheres-protagonistas-nos-videojogos" target="_"><div class="news news3"></div></div></a></div>
+            </div>
+            <!-- <div class="row">Sofreu ou presenciou algum assédio nos jogos?<button>Denuncie aqui</button></div> -->
+        </div>
+
+        <!-- Parceiros -->
+
+        <h2 class="mt-5 mb-5 text-center text-white">Parceiros</h2>
+        <div class="marB container w-50">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/home/parceiros/soulcode.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/tnt.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/github.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/twitch.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/discord.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/steam.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/epic.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/home/parceiros/riot.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="container-fluid py-3">
+         
+        
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-lg-5 col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+            
+                    <div class="row">
+                        <img class="pay" src="../img/american.svg" alt="">
+                        <img class="pay " src="../img/elo.svg" alt="">
+                        <img class="pay" src="../img/master.svg" alt="">
+                        <img class="pay" src="../img/visa.svg" alt="">
+                    </div>
+                    <div class="row">
+                        <img class="pay" src="../img/paypal.svg" alt="">
+                        <img class="pay" src="../img/pagseguro.svg" alt="">
+                        <img class="pay" src="../img/pix.svg" alt="">
+                        <img class="pay" src="../img/boleto.svg" alt="">
+                    </div>
+            
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 d-flex justify-content-center text-center">
+                    <ul class="nav nav-ft">
+                        <li class="nav-item"><a href="home.html" class="nav-link px-2">Home</a></li>
+                        <li class="nav-item"><a href="formulário.html" class="nav-link px-2">Espaço Streamer</a></li>
+                        <li class="nav-item"><a href="institucional.html" class="nav-link px-2">Institucional</a></li>
+                        <li class="nav-item"><a href="servicos.html" class="nav-link px-2">Loja</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+                        <img class="social" src="../img/facebook.png" alt="">
+                        <img class="social" src="../img/instagram.png" alt="">
+                        <img class="social" src="../img/twitter.png" alt="">
+                </div>
+            </div>
+        
+        <div class="container flex-wrap justify-content-center align-items-center">
+            
+                <div">
+                    <a href="home.html" class="d-flex align-items-center justify-content-center link-dark text-decoration-none mb-3">
+                        <img src="../img/logo.png" alt="LOGO">
+                      </a>
+                    <p class="text-center border-top py-2 bdFt">© 2021 Gamer Girl, Inc</p>
+                </div>    
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper >
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- **************************************************** Fim da Página | Adição de Scripts ************************************************* -->
+      
+    
+    <script type="text/javascript" src="../js/home.js"></script>
+  </body>
 </html>
