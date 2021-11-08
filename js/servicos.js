@@ -245,10 +245,12 @@ function apagarProduto(nome) {
             }
         }
     console.log(val)
+    onloadCarrinhoNum();
+    aparecerCarrinho();
     
-    let contador = localStorage.getItem(carrinhoNum);
+    // let contador = localStorage.getItem(carrinhoNum);
 
-    localStorage.setItem('carrinhoNum', carrinhoNum - contador);
+    // localStorage.setItem('carrinhoNum', carrinhoNum - contador);
 
     localStorage.setItem('produtoNoCarrinho', JSON.stringify(val));
     aparecerCarrinho();
@@ -259,22 +261,6 @@ function apagarProduto(nome) {
 
 onloadCarrinhoNum();
 aparecerCarrinho();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Modal style
