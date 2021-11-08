@@ -155,14 +155,14 @@ footer{
 
 #nossaMissao p, #sobreNos p {
     font-size: 1.3vw;
-    margin-left: 4px;
-    margin-right: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #nossaMissao h1, #sobreNos h2 {
     font-size: 3.4vw;
-    margin-left: 4px;
-    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .sn_title, .nm_title {
