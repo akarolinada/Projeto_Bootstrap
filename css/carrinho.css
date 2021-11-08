@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/************************************ Mudança de classes bootstrap *****************************************/
+
+.bg-dark{   /********************** BODY ********************/
+    background-color: #170F1F!important;
+
+}
+.bg-light{
+    background-color: #BF7EFF!important;
+}
+/********************** BUTTONS *******************/
+.btn-primary {
+    color: #170F1F;
+    background: rgba(34, 241, 34, 0.82);
+    box-shadow: 0px 0px 7px 7px #BF7EFF;
+    filter: blur(0.5px);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold!important;
+}
+.btn-primary:hover {
+    background: rgba(191, 126, 255);
+    border: none;
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+    font-weight: bold!important;
+}
+.btn-primary:focus {
+    background: rgba(191, 126, 255);
+    border: none;
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+    font-weight: bold!important;
+}
+
+.text-dark {
+    color: #170F1F;
+}
+
+/*************************************************************** HEADER NAV ***********************************************************/
+/************************ Alteração cor botão sanduiche toggle bootstrap ***************************/
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 15, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.custom-toggler .navbar-toggler {
+    /* border-color: rgba(191, 126, 255, 1); */ /*Lilás*/
+    border-color: rgba(23, 15, 31, 1); /*Preto*/
+}
+.navbar-toggler {
+    padding: 9px 9px;
+    /* border: 3px solid #BF7EFF; */ /*Lilás*/
+    border: 3px solid #170F1F; /*Preto*/
+    border-radius: 20rem;
+    /* color: #BF7EFF; */ /*Lilás*/
+    color: #170F1F;
+}
+.navbar-dark .navbar-toggler {
+    /* color: #BF7EFF;
+    border-color: #BF7EFF; */ /*Lilás*/
+    color: #170F1F; /*Preto*/
+    border-color: #170F1F; /*Preto*/
+    border: 2px solid;
+}
+ 
+
+
+.carrinho{
+    margin-top:150px!important;
+    margin-bottom:  50px!important;
+}
+
+
+/************************* Links da Nav **************************/
+.nav-link {
+    justify-content: right!important;
+    display: flex!important;
+    margin-right: 10px!important;
+    color: #170F1F !important;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    text-align: right;
+}
+
+
+.pay {
+    width: 60px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+.social {
+    margin-left: 10px;
+    
+}
+footer{
+    background-color: #BF7EFF;
+    color: #170F1F;
+}
+.nav-ft{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.bdFt{
+    border-top: 2px solid #20db20!important;
+}
+
+/* Margin Top e Bottom para separação de elementos na página */
+.marT{
+    margin-top: 70px;
+}
+.marB{
+    margin-bottom: 70px;
+}
