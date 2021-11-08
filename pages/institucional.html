@@ -5,419 +5,406 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mulheres</title>
+    <title>Gamer Girl | Institucional</title>
 
     <!-- Chamando fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
     <!-- Chamando Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+
     <!-- Chamando jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- Chamando Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-    <style>
-        /* Estilo aplicável à toda página */
-        * {
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            background-color: #170F1F;
-        }
+    <!-- Chamando CSS -->
+    <link rel="stylesheet" href="../css/institucional.css">
 
-        /* Posicionamento das sessões para aplicação de texto sobre imagem */
-        #sessaoBanner,
-        #sessaoMulheres {
-            position: relative;
-            background-color: #170F1F;
-        }
-
-        /* SESSÃO BANNER */
-
-        /* Editando texto inicial da página: lugar de mulher é onde ela quiser */
-        #sessaoBanner div:first-of-type {
-            text-shadow: 3px 3px 3px #22F122;
-            font-family: 'Fredoka One', cursive;
-            position: absolute;
-            top: 8px;
-            left: 16px;
-        }
-
-        /* Editando texto secundário da página: conheça.. */
-        #sessaoBanner div:nth-of-type(2) {
-            text-shadow: 3px 3px 3px #BF7EFF;
-            font-family: 'Merienda', cursive;
-            position: absolute;
-            bottom: 8px;
-            right: 16px;
-        }
-
-        /* Aplicando responsividade e ajustando a aparência do banner */
-        #sessaoBanner .img-fluid {
-            max-height: 30vw;
-            object-fit: cover;
-            object-position: 0 20%;
-        }
-
-        /* ************************ */
-
-        /* SESSÃO CARDS */
-
-        /* Editando borda e sombra do quadro que conterá os cards */
-        #sessaoCards {
-            border-width: 8px;
-            border-color: white;
-            border-style: ridge;
-            box-shadow: 4px 4px 38px 5px darkgray, -4px -4px 38px 5px darkgray;
-        }
-
-        /* Estilizando as bordas de cada card */
-        .border-ico {
-            border: 5px solid;
-            border-image: conic-gradient(from 168.12deg at 50% 50%, #A094D4 12.3%, #22F122 63.04%, #BF7EFF 91%) 1;
-            display: inline-block;
-            position: relative;
-        }
-
-        /* Cards das mulheres: visualização inicial em preto-e-branco e ajustando posicionamento para que o texto possa sobrepor a imagem */
-        .ico-mulheres {
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-            border: 1px solid transparent;
-            position: relative;
-        }
-
-        /* Cards das mulheres: colorindo com o efeito hover */
-        .ico-mulheres:hover {
-            filter: none;
-            -webkit-filter: grayscale(0);
-        }
-
-        /* Nomes das mulheres que irão sobre seus cards */
-        .ico-nome {
-            font-family: 'Merienda', cursive;
-            display: none;
-            color: white;
-            text-shadow: 2px 2px 2px #BF7EFF;
-            font-size: clamp(1em, 0.5em + 0.7vw, 1.5em);
-            position: absolute;
-            top: 70%;
-        }
-
-        .seta {
-            visibility: hidden;
-            display: block;
-        }
-
-        /* ************************ */
-
-        /* SESSÃO INFOS SOBRE AS MULHERES */
-
-        /* Posicionamento e tamanho dos quadros de info */
-        #sessaoMulheres {
-            max-width: 60vw;
-            /* height: 20vw; */
-            height: auto;
-            margin: 0 auto;
-            border: transparent;
-        }
-
-        .fundoMulheres {
-            background-image: url(../img/img_institucional/fundo-3.png);
-            background-size: cover;
-            background-color: #170F1F;
-            border: 10px solid;
-            border-image: conic-gradient(from 168.12deg at 50% 50%, #A094D4 12.3%, #22F122 63.04%, #BF7EFF 91%) 1;
-            /* display: none; */
-        }
-
-        .cardMulheres div:first-of-type {
-            font-family: 'Merienda', cursive;
-        }
-
-        .cardMulheres div:last-of-type {
-            padding-top: 15%;
-            padding-left: 35%;
-        }
-
-        /* .card-desc {
-            display: block;
-            font-size: 1.2rem;
-            position: absolute;
-            height: 0;
-            top: 0;
-            opacity: 0;
-            padding: 18px 8%;
-            background-color: transparent;
-            overflow-x: scroll;
-            transition: 0.8s ease-out;
-        }
-
-        .card-desc-2 {
-            opacity: 1;
-            height: 100%;
-        }
-
-        .trocar-card {
-            visibility: hidden;
-        } */
-
-        .video-game-button {
-            text-shadow: 1px 1px #A094D4, -1px -1px #8d24f7;
-            font-size: large;
-            line-height: 1.8em;
-            /* text-align: center; */
-            /* display: inline-block; */
-            width: 1.8em;
-            border-radius: 1em;
-            background-color: #BF7EFF;
-            box-shadow: 0 .2em #8d24f7;
-            color: #aca3d6;
-            /* margin: 5px; */
-            /* margin-left: 860px; */
-            /* background-image: linear-gradient(left top, #A094D4 3%, #BF7EFF 22%, #8d24f7 99%); */
-            cursor: pointer;
-        }
-
-        .video-game-button:active {
-            box-shadow: none;
-            position: relative;
-            top: .2em;
-        }
-
-        .video-game-button:disabled {
-            background-color: lightgray;
-            cursor: auto;
-            color: darkgray;
-            box-shadow: none;
-            position: static;
-        }
-
-        .card-title {
-            margin-top: 2%;
-            margin-right: 1%;
-        }
-
-        .card-subtitle {
-            margin-top: 15%;
-            margin-left: 30%;
-            margin-right: 1%;
-        }
-
-        .card-button-2 {
-            margin-top: 15%;
-            margin-left: 60%
-        }
-
-        .card-desc {
-            display: none;
-            margin-left: 52%;
-            text-align: justify;
-        }
-    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
 </head>
 
-<body>
+<body onload="abrirPagina()">
     <!-- Abertura da sessão Header - utilizando navbar do Bootstrap -->
-    <header class="text-light">AQUI VAI UM HEADER</header>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-xxxl navbar-dark p-md-3 bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="home.html"><img src="../img/logo.png" alt=""></a>
+                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formulário.html">Espaço Streamer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="institucional.html">Institucional</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Encerramento da sessão do Header -->
 
     <main>
         <!-- Abertura da sessão do Banner - utilizando imagens responsivas do Bootstrap -->
         <section class="container-fluid px-0" id="sessaoBanner">
             <img src="../img/img_institucional/banner_inst.png" alt="" class="img-fluid w-100">
-            <div class="text-light display-1 top-left">LUGAR DE MULHER É ONDE ELA QUISER</div>
-            <div class="text-light h2 bottom-right">Conheça mulheres que revolucionaram o universo dos games...</div>
+            <div class="text-light top-left">LUGAR DE MULHER É ONDE ELA QUISER</div>
+            <div class="text-light bottom-right">Conheça mulheres que revolucionaram o universo dos games...</div>
         </section>
         <!-- Encerramento da sessão do Banner -->
 
+        <!-- Abertura da sessão Nossa Missão -->
+        <section id="nossaMissao">
+            <h1 class="text-center nm_title">Nossa missão</h1>
+            <p class="text-center text-light">Para vivermos do presente, é necessário <span
+                    class="textoDestaque">aprendermos sobre o passado</span>.
+                Apresentamos a vocês algumas das mulheres que revolucionaram o universo dos games, deixando sua marca
+                por onde passaram. Dentre os nomes apresentados, fizemos questão de trazer as <span
+                    class="textoDestaque">pioneiras</span> no cenário do desenvolvimento - mulheres que nas décadas de
+                80 e 90 já buscavam seu espaço em um universo
+                tomado pelos homens.</p>
+            <p class="text-center text-light">A partir da luta e resiliência dessas pioneiras, foi possível que mulheres
+                das mais recentes gerações tivessem oportunidade para se
+                destacar nesse ambiente - aqui, trouxemos exemplos de streamers, jogadoras profissionais e até sócias
+                de times importantes no eSports que lutam diariamente por um <span class="textoDestaque">ambiente mais
+                    justo</span> - com igualidade de
+                prêmios, tratamentos e oportunidades.</p>
+            <p class="text-center text-light">Por último e não menos importante, citamos algumas personagens femininas
+                de <span class="textoDestaque">história forte</span> e cuja criação não tenha sido movida pela
+                sexualização de sua imagem. Nos baseamos no
+                <span class="textoDestaque">"Teste de Bechdel"</span>, qualificação utilizada para classificar a
+                participação de personagens femininas no
+                cinema, e que atualmente vem sido utilizado na análise de games recentemente lançados.
+            </p>
+            <p class="text-center" style="color: #22F122">Esperamos que você, Gamer Girl que nos acessa, sinta-se
+                inspirada pelas
+                mulheres do passado, motivadas pelas estrelas do presente para trilhar seu próprio futuro.</p>
+        </section>
+        <!-- Encerramento da sessão Nossa Missão -->
+
         <!-- Abertura da sessão de Escolha os Players de Mulheres - utilizando grid do Bootstrap -->
-        <section class="container mt-5" id="sessaoCards">
-            <h1 class="text-light text-center my-3">Escolha..</h1>
-            <div class="row text-center mb-3">
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
+        <section class="container mt-5 borda" id="sessaoCards">
+            <div class="imagem">
+                <!-- <h1 class="text-light text-center my-3">Escolha..</h1> -->
+                <div class="row text-center mb-3 p-2">
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_0.png" class="ico-mulheres img-fluid img-thumbnail"
+                                onclick="mudarCard(0)">
+                            <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_1.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(1)">
+                            <figcaption class="ico-nome carousel-caption">Ellie</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_2.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(2)">
+                            <figcaption class="ico-nome carousel-caption">Cherrygumms</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_3.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(3)">
+                            <figcaption class="ico-nome carousel-caption">Amy Briggs</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_4.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(4)">
+                            <figcaption class="ico-nome carousel-caption">Doris Self</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
+                <div class="row text-center mb-3 p-2">
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_5.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(5)">
+                            <figcaption class="ico-nome carousel-caption">Zelda</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_6.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(6)">
+                            <figcaption class="ico-nome carousel-caption">Showliana</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_7.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(7)">
+                            <figcaption class="ico-nome carousel-caption">Dona Bailey</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_8.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(8)">
+                            <figcaption class="ico-nome carousel-caption">Nyvi Estephan</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_9.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(9)">
+                            <figcaption class="ico-nome carousel-caption">Max e Chloe</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row text-center mb-3">
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row text-center mb-2">
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
-                    <i class="bi bi-caret-down-fill text-success seta h3"></i>
-                    <figure class="border-ico">
-                        <img src="../img/img_institucional/carol_ico.png" alt="" class="ico-mulheres img-fluid">
-                        <figcaption class="ico-nome carousel-caption">Carol Shaw</figcaption>
-                    </figure>
+                <div class="row text-center mb-1 p-2">
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_10.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(10)">
+                            <figcaption class="ico-nome carousel-caption">Aloy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_11.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(11)">
+                            <figcaption class="ico-nome carousel-caption">Samira Close</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_12.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(12)">
+                            <figcaption class="ico-nome carousel-caption">Brenda Laurel</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_13.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(13)">
+                            <figcaption class="ico-nome carousel-caption">Harumi</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 player-card m-auto">
+                        <i class="bi bi-caret-down-fill text-success seta h3"></i>
+                        <figure class="border-ico">
+                            <img src="../img/img_institucional/ico_14.png" alt=""
+                                class="ico-mulheres img-fluid img-thumbnail" onclick="mudarCard(14)">
+                            <figcaption class="ico-nome carousel-caption">Samus Aran</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Encerramento da sessão Escolha os Players de Mulheres -->
 
         <!-- Abertura da sessão dos Cards de Mulheres - utilizando card horizontal do Bootstrap -->
-        <section class="card my-5 text-light" id="sessaoMulheres">
-            <div class="fundoMulheres">
+        <section class="card mt-5 mb-2 text-light" id="sessaoMulheres">
+            <div class="fundoMulheres" id="cartao1">
                 <div style="border: 1px solid black">
                     <div class="col-md-4 cardFoto">
-                        <img src="../img/img_institucional/carol_card.png" class="img-fluid rounded-start">
+                        <img src="" class="img-fluid rounded-start card-img">
                     </div>
                     <div class="col-md-8 cardMulheres">
-                        <div class="card-title card-img-overlay text-end display-3">Carol Shaw</div>
-                        <div class="card-subtitle card-img-overlay text-end h1 text-wrap">Primeira
-                            programadora e desenhista de jogo</div>
-                        <p class="card-desc card-img-overlay h4">Em 1978, Carol deixou seu nome na história dos games como a primeira mulher a programar e criar um jogo de vídeo, o 3D Tic-Tac-Toe para o Atari 2600. Ao longo dos anos, Carol criou vários outros títulos famosos na década de 80, como River Raid e Happy Trails.
+                        <div class="card-title card-img-overlay text-end"></div>
+                        <div class="card-subtitle card-img-overlay text-end text-wrap"></div>
+                        <p class="card-desc card-img-overlay">
                         </p>
-                        <div class="card-img-overlay card-button-2">
-                            <button class="video-game-button"><i class="bi bi-caret-right-fill"></i></button>
+                        <div class="card-img-overlay card-button d-inline-block">
+                            <button class="video-game-button botao1"><i class="bi bi-caret-left-fill"></i></button>
+                            <button class="video-game-button botao2"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="text-center mt-4"><button class='btn-primary w-auto px-3'>CONHEÇA OUTRA GAMER GIRL</button></div>
         <!-- Encerramento da sessão Cards de Mulheres -->
 
+        <!-- Abertura da sessão Sobre Nós - utilizando carrossel do Bootstrap -->
+        <section id="sobreNos">
+            <h2 class="h1 mt-5 text-center sn_title">Sobre Nós</h2>
+            <p class="text-light text-center">Apaixonadas por games e entusiastas da tecnologia, nossa equipe tem como
+                missão fazer parte do seleto grupo de mulheres inspiradoras da nova geração de Girls Gamers ao lado de
+                nossas ídolas acima homenageadas. Abaixo, contamos nos apresentamos a vocês contando um pouco de nossa
+                história com o universo gamer.</p>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-7 m-auto">
+                    <div id="carouselExampleControls" class="carousel slide mb-3" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active row">
+                                <div>
+                                    <img src="../img/img_institucional/sn_1.png" class="d-block img-fluid img_sn">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block card-img-overlay text-end col-10">
+                                    <p>Elle Wolfgher</p>
+                                    <p>23 anos</p>
+                                    <p>Game favorito: Life is Strange</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img_institucional/sn_2.png" class="d-block img-fluid img_sn">
+                                <div class="carousel-caption d-none d-md-block card-img-overlay text-end col-10">
+                                    <p>Karol Melo</p>
+                                    <p>30 anos</p>
+                                    <p>Game favorito: Wild Rift</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img_institucional/sn_3.png" class="d-block img-fluid img_sn">
+                                <div class="carousel-caption d-none d-md-block card-img-overlay text-end col-10">
+                                    <p>Elisa Santana</p>
+                                    <p>20 anos</p>
+                                    <p>Game favorito: The Last of Us</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img_institucional/sn_4.png" class="d-block img-fluid img_sn">
+                                <div class="carousel-caption d-none d-md-block card-img-overlay text-end col-10">
+                                    <p>Carol Rodrigues</p>
+                                    <p>31 anos</p>
+                                    <p>Game favorito: Top Gear</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img_institucional/sn_5.png" class="d-block img-fluid img_sn">
+                                <div class="carousel-caption d-none d-md-block card-img-overlay text-end col-10">
+                                    <p>Geisa Santos</p>
+                                    <p>25 anos</p>
+                                    <p>Game favorito: Warcraft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Encerramento da sessão Sobre Nós -->
     </main>
-    <footer class="text-light">AQUI VAI UM FOOTER</footer>
 
+    <!-- Abertura do Footer -->
+    <footer class="container-fluid py-3">
+
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-lg-5 col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+
+                <div class="row">
+                    <img class="pay" src="../img/american.svg" alt="">
+                    <img class="pay " src="../img/elo.svg" alt="">
+                    <img class="pay" src="../img/master.svg" alt="">
+                    <img class="pay" src="../img/visa.svg" alt="">
+                </div>
+                <div class="row">
+                    <img class="pay" src="../img/paypal.svg" alt="">
+                    <img class="pay" src="../img/pagseguro.svg" alt="">
+                    <img class="pay" src="../img/pix.svg" alt="">
+                    <img class="pay" src="../img/boleto.svg" alt="">
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 d-flex justify-content-center text-center">
+                <ul class="nav nav-ft">
+                    <li class="nav-item"><a href="home.html" class="nav-link px-2">Home</a></li>
+                    <li class="nav-item"><a href="formulário.html" class="nav-link px-2">Divulgação</a></li>
+                    <li class="nav-item"><a href="institucional.html" class="nav-link px-2">Institucional</a></li>
+                    <li class="nav-item"><a href="servicos.html" class="nav-link px-2">Loja</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-5 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+                <img class="social" src="../img/facebook.png" alt="">
+                <img class="social" src="../img/instagram.png" alt="">
+                <img class="social" src="../img/twitter.png" alt="">
+            </div>
+        </div>
+
+        <div class="container flex-wrap justify-content-center align-items-center">
+
+            <div">
+                <a href="home.html"
+                    class="d-flex align-items-center justify-content-center link-dark text-decoration-none mb-3">
+                    <img src="/img/logo.png" alt="LOGO">
+                </a>
+                <p class="text-center border-top py-2 bdFt">© 2021 Gamer Girl, Inc</p>
+        </div>
+        </div>
+    </footer>
+    <!-- Encerramento do Footer -->
+
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <!-- Chamando JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Chamando JS -->
+    <script src="../js/institucional.js"></script>
+
+    <!-- VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-        $(document).ready(function () {
-
-            var nomes = $(".ico-nome");
-            var setas = $(".seta");
-            var cards = $(".fundoMulheres");
-
-            $(".ico-mulheres").each(function (i) {
-                var cadaNome = nomes.eq(i);
-                var cadaSeta = setas.eq(i);
-                var cadaCard = cards.eq(i);
-
-                $(this).on({
-                    mouseover: function () {
-                        cadaNome.show(); cadaSeta.css({
-                            visibility: "visible"
-                        })
-                    },
-                    mouseout: function () {
-                        cadaNome.hide(); cadaSeta.css({
-                            visibility: "hidden"
-                        })
-                    },
-                    click: function () {
-                        cadaCard.show();
-                        document.querySelector(".fundoMulheres").scrollIntoView();
-                    },
-                });
-            });
-
-            document.querySelector(".video-game-button").addEventListener("click", function trocarCard() {
-                document.querySelector(".card-desc").style.display = "flex";
-                document.querySelector(".card-title").style.display = "none";
-                document.querySelector(".card-subtitle").style.display = "none";
-                this.disabled=true;
-            });
-        })
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </body>
 
