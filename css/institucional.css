@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap%27');
+
+/* Estilo aplicável à toda página */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-color: #170F1F;
+}
+
+.textoDestaque {
+    color: #BF7EFF;
+}
+
+/* Posicionamento das sessões para aplicação de texto sobre imagem */
+#sessaoBanner,
+#sessaoMulheres {
+    position: relative;
+    background-color: #170F1F;
+}
+
+/************************************ Mudança de classes bootstrap *****************************************/
+
+.bg-dark{   /********************** BODY ********************/
+    background-color: #170F1F!important;
+}
+
+.bg-light{
+    background-color: #BF7EFF!important;
+}
+
+        /*************************************************************** HEADER NAV ***********************************************************/
+    /************************ Alteração cor botão sanduiche toggle bootstrap ***************************/
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 15, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .custom-toggler .navbar-toggler {
+        /* border-color: rgba(191, 126, 255, 1); */ /*Lilás*/
+        border-color: rgba(23, 15, 31, 1); /*Preto*/
+    }
+    .navbar-toggler {
+        padding: 9px 9px;
+        /* border: 3px solid #BF7EFF; */ /*Lilás*/
+        border: 3px solid #170F1F; /*Preto*/
+        border-radius: 20rem;
+        /* color: #BF7EFF; */ /*Lilás*/
+        color: #170F1F;
+    }
+    .navbar-dark .navbar-toggler {
+        /* color: #BF7EFF;
+        border-color: #BF7EFF; */ /*Lilás*/
+        color: #170F1F; /*Preto*/
+        border-color: #170F1F; /*Preto*/
+        border: 2px solid;
+    }
+    
+    /************************* Links da Nav **************************/
+    .nav-link {
+        justify-content: right;
+        display: flex;
+        margin-right: 10px;
+        color: #170F1F !important;
+        font-weight: bold;
+    }
+
+
+    /***************************************************************** FOOTER ***********************************************************/
+.pay {
+    width: 60px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+.social {
+    margin-left: 10px;
+    
+}
+footer{
+    background-color: #BF7EFF;
+    color: #170F1F;
+}
+.nav-ft{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.bdFt{
+    border-top: 2px solid #20db20!important;
+}
+
+/* Margin Top e Bottom para separação de elementos na página */
+.marT{
+    margin-top: 70px;
+}
+.marB{
+    margin-bottom: 70px;
+}
+
+@media(max-width: 767px){
+    .social {
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Margin Top e Bottom para separação de elementos na página */
+
+.marT{
+    margin-top: 70px;
+}
+
+.marB{
+    margin-bottom: 70px;
+}
+
+
+/* SESSÃO BANNER */
+
+/* Editando texto inicial da página: lugar de mulher é onde ela quiser */
+#sessaoBanner div:first-of-type {
+    text-shadow: 3px 3px 3px #22F122;
+    /* font-family: 'Fredoka One', cursive; */
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 4vw;
+}
+
+/* Editando texto secundário da página: conheça.. */
+#sessaoBanner div:nth-of-type(2) {
+    text-shadow: 3px 3px 3px #BF7EFF;
+    /* font-family: 'Merienda', cursive; */
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: 3vw;
+}
+
+/* Aplicando responsividade e ajustando a aparência do banner */
+#sessaoBanner .img-fluid {
+    max-height: 30vw;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+#sessaoBanner {
+    margin-top: 100px;
+}
+
+/* ***************************************************************************************************************/
+
+/* SESSÃO NOSSA MISSÃO */
+
+#nossaMissao p, #sobreNos p {
+    font-size: 1.3vw;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#nossaMissao h1, #sobreNos h2 {
+    font-size: 3.4vw;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.sn_title, .nm_title {
+    color: #22F122;
+    margin-top: 20px;
+}
+
+/* SESSÃO CARDS */
+
+/* Editando borda e sombra do quadro que conterá os cards */
+#sessaoCards {
+    /* border-width: 8px; */
+    /* border-color: white; */
+    /* border-image: conic-gradient(from 168.12deg at 50% 50%, #A094D4 12.3%, #22F122 63.04%, #BF7EFF 91%) 1;
+    border-style: ridge; */
+    box-shadow: 4px 4px 38px 5px darkgray, -4px -4px 38px 5px darkgray;
+}
+
+/* Estilizando as bordas de cada card */
+
+.borda {
+    width: 80vw;
+    height: auto;
+    background-image: linear-gradient(to top, rgba(34, 241, 34, 0.82), rgba(191, 126, 255, 1));
+    padding: 7px;
+    border-radius: 0 60px;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 60px;
+    background-color: #170F1F;
+}
+
+.border-ico {
+    /* border: 3px solid; */
+    /* border-image: conic-gradient(from 168.12deg at 50% 50%, #A094D4 12.3%, #22F122 63.04%, #BF7EFF 91%) 1; */
+    /* border-color: white; */
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+/* Cards das mulheres: visualização inicial em preto-e-branco e ajustando posicionamento para que o texto possa sobrepor a imagem */
+.ico-mulheres {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border: 1px solid transparent;
+    position: relative;
+}
+
+/* Cards das mulheres: colorindo com o efeito hover */
+.ico-mulheres:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+/* Nomes das mulheres que irão sobre seus cards */
+.ico-nome {
+    /* font-family: 'Merienda', cursive; */
+    display: none;
+    color: white;
+    text-shadow: 2px 2px 2px #BF7EFF;
+    font-size: 0.95vw;
+    position: absolute;
+    top: 70%;
+}
+
+.seta {
+    visibility: hidden;
+    display: block;
+}
+
+/* ********************************************************************************************************************* */
+
+/* SESSÃO INFOS SOBRE AS MULHERES */
+
+/* Posicionamento e tamanho dos quadros de info */
+#sessaoMulheres {
+    max-width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    border: transparent;
+}
+
+.fundoMulheres {
+    background-image: url(../img/img_institucional/fundo-3.png);
+    background-size: cover;
+    background-color: #170F1F;
+    border: 10px solid;
+    border-image: conic-gradient(from 168.12deg at 50% 50%, #A094D4 12.3%, #22F122 63.04%, #BF7EFF 91%) 1;
+}
+
+/* .cardMulheres div:first-of-type {
+    font-family: 'Merienda', cursive;
+} */
+
+.cardMulheres div:last-of-type {
+    padding-top: 13%;
+    padding-left: 33%;
+}
+
+/* Botões de < e > para navegação no card */
+.video-game-button {
+    text-shadow: 1px 1px #A094D4, -1px -1px #8d24f7;
+    font-size: large;
+    line-height: 1.8em;
+    width: 1.8em;
+    border-radius: 1em;
+    background-color: #BF7EFF;
+    box-shadow: 0 .2em #8d24f7;
+    color: #aca3d6;
+    cursor: pointer;
+}
+
+.video-game-button:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+}
+
+.video-game-button:disabled {
+    background-color: lightgray;
+    cursor: auto;
+    color: darkgray;
+    box-shadow: none;
+    position: static;
+}
+
+/* Botão para voltar ao topo */
+.btn-primary {
+    color: #170F1F;
+    background: rgba(34, 241, 34, 0.82);
+    box-shadow: 0px 0px 7px 7px #BF7EFF;
+    filter: blur(0.5px);
+    border: none;
+    border-radius: 50px;
+}
+        
+.btn-primary:hover {
+    background: rgba(191, 126, 255);
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+}
+
+.btn-primary:focus {
+    background: rgba(191, 126, 255);
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+}
+
+/* Títulos, subtítulos e descrições */
+
+.card-title {
+    color: #22F122;
+    font-weight: 700;
+    margin-left: 55%;
+    /* margin-top: 2%;
+    margin-right: 1%; */
+    font-size: 2.2vw;
+}
+
+.card-subtitle {
+    margin-top: 12%;
+    margin-left: 60%;
+    /* margin-right: 1%; */
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.card-button {
+    margin-top: 15%;
+    margin-left: 55%;
+}
+
+.card-desc {
+    display: none;
+    margin-left: 60%;
+    margin-top: 1%;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+
+/* Sobre Nós - Carrossel */
+.carousel-caption p:first-of-type {
+    color: #22F122;
+    margin-top: 3%;
+    font-size: 2.2vw;
+}
+
+.carousel-caption p:nth-of-type(2) {
+    font-size: 2vw;
+}
+
+.carousel-caption p:nth-of-type(3) {
+    font-size: 1.7vw;
+    margin-left: 40%;
+}
+
+.carousel {
+    background-image: url(../img/img_institucional/fundo-2.png);
+    background-size: cover;
+    background-color: #170F1F;
+    border: 10px solid;
+    border-image: conic-gradient(from 168.12deg at 50% 50%, #A094D4 12.3%, #22F122 63.04%, #BF7EFF 91%) 1;
+    /* width: 55%; */
+}
+
+.carousel-caption {
+    /* margin-right: -120px;
+    margin-left: 256px; */
+    margin-left: 3%;
+}
+
+/* RESPONSIVIDADE X-SMALL */
+@media (max-width: 576px) {
+    .player-card{
+        zoom: 75%;
+    }
+    .ico-nome {
+        font-size: 2.2vw;
+    }
+    .carousel {
+        background-image: url(../img/img_institucional/fundo-4.png);
+    }
+    .img_sn {
+        padding-left: 10%;
+    }
+    .video-game-button {
+        /* margin-bottom: 1px; */
+        /* border-radius: 0.75em */     
+        line-height: 1.2em;
+        width: 1.2em;
+    }
+    .cardMulheres div:last-of-type {
+        padding-top: 70%;
+        padding-left: 10%;
+    }
+    .card-subtitle {
+        margin-top: 10%;
+        margin-left: 60%;
+    }
+    .card-desc {
+        background-color: #170F1F66;
+        margin-top: 3%;
+        margin-right: 3%;
+        font-size: 0.5em;
+    }        
+    #nossaMissao p, #sobreNos p {
+        font-size: 2vw;
+    }
+    #nossaMissao h1, #sobreNos h2 {
+        font-size: 3.4vw;
+    }
+}
+
+/* RESPONSIVIDADE SMALL */
+@media (min-width: 576px) and (max-width: 768px) {
+    .ico-nome {
+        font-size: 2vw;
+    }
+    .carousel {
+        width: 270px;
+    }
+    .img_sn {
+        margin-left: 10%;
+    }
+    .video-game-button {
+        margin-bottom: 1px;
+        /* border-radius: 0.75em */
+    }
+    .cardMulheres div:last-of-type {
+        padding-top: 73%;
+        padding-left: 18%;
+    }
+    .card-subtitle {
+        margin-top: 20%;
+        margin-left: 60%;
+    }
+    .card-desc {
+        background-color: #170F1F66;
+        margin-top: 3%;
+        margin-right: 3%;
+    }
+}
+
+/* RESPONSIVIDADE MEDIUM */
+@media (min-width: 768px) and (max-width: 992px) {
+    .ico-nome {
+        font-size: 1.5vw;
+    }
+    .carousel {
+        background-image: url(../img/img_institucional/fundo-1.png);
+    }
+    .img_sn {
+        zoom: 70%
+    }
+    .carousel-caption p:first-of-type {
+        margin-left: 50%;
+        margin-top: 5%;
+        font-size: 1.9vw;
+    }
+    .carousel-caption p:nth-of-type(2) {
+        font-size: 1.7vh;
+    }
+    .carousel-caption p:nth-of-type(3) {
+        font-size: 1.7vh;
+    }
+    .video-game-button {
+        width: 1.5em;        
+        line-height: 1.5em;
+        border-radius: 0.75em
+    }
+    .cardMulheres div:last-of-type {
+        padding-top: 13%;
+        padding-left: 25%;
+    }
+    .card-subtitle {
+        margin-top: 10%;
+        margin-left: 60%;
+    }    
+
+}
