@@ -10,8 +10,8 @@
 <br>
 <strong>Grupo:<strong>
 
-Ana karolina de Melo<br>
-Carolina Rodrigues<br>
+Karol de Melo<br>
+Carol Rodrigues<br>
 Elisa<br> 
 Elle<br>
 Geisa<br>
