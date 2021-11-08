@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap%27');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-color: #170F1F;
+}
+
+/************************************ Mudança de classes bootstrap *****************************************/
+
+.bg-dark{   /********************** BODY ********************/
+    background-color: #170F1F!important;
+}
+.bg-light{
+    background-color: #BF7EFF!important;
+}
+/*************************************************************** HEADER NAV ***********************************************************/
+/************************ Alteração cor botão sanduiche toggle bootstrap ***************************/
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 15, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.custom-toggler .navbar-toggler {
+    /* border-color: rgba(191, 126, 255, 1); */ /*Lilás*/
+    border-color: rgba(23, 15, 31, 1); /*Preto*/
+}
+.navbar-toggler {
+    padding: 9px 9px;
+    /* border: 3px solid #BF7EFF; */ /*Lilás*/
+    border: 3px solid #170F1F; /*Preto*/
+    border-radius: 20rem;
+    /* color: #BF7EFF; */ /*Lilás*/
+    color: #170F1F;
+}
+.navbar-dark .navbar-toggler {
+    /* color: #BF7EFF;
+    border-color: #BF7EFF; */ /*Lilás*/
+    color: #170F1F; /*Preto*/
+    border-color: #170F1F; /*Preto*/
+    border: 2px solid;
+}
+
+/************************* Links da Nav **************************/
+.nav-link {
+    justify-content: right;
+    display: flex;
+    margin-right: 10px;
+    color: #170F1F !important;
+    font-weight: bold;
+}
+/***************************************************************** FOOTER ***********************************************************/
+.pay {
+    width: 60px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+.social {
+    width: 45px!important;
+    margin-left: 10px;
+    
+}
+footer{
+    background-color: #BF7EFF;
+    color: #170F1F;
+}
+.bdFt{
+    border-top: 2px solid #20db20!important;
+}
+
+/* Margin Top e Bottom para separação de elementos na página */
+.marT{
+    margin-top: 70px;
+}
+.marB{
+    margin-bottom: 70px;
+}
+
+/* Ajuste do top do  carousel */
+
+.carousel {
+    margin-top: 68px;
+}
+
+/* Estilo para os links */
+
+a {
+    color: #882ee2 !important;
+}
+
+a:hover {
+    color: #170F1F !important;
+}
+
+/* Estilo para o título */
+
+.titulo {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 15px;
+}
+
+main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subtitulo {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Estilização da div que vai conter as imagens postadas */
+
+#img-view {
+    width: 15rem;
+    height: 17rem;
+    background-image: linear-gradient(to top, rgba(34, 241, 34, 0.82), rgba(191, 126, 255, 1));
+    padding: 7px;
+    border-radius: 0 60px;
+}
+
+/* Estilização da imagem em si */
+
+#img-show {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 60px;
+}
+
+/* /Estilização dos inputs */
+
+.form-control-sm {
+    width: 320px;
+    height: 42px;
+    border: #A094D4 solid 5px;
+}
+
+.form-control-sm:focus {
+    outline: none;
+    border: #22F122 5px solid;
+}
+
+.form-select-sm {
+    width: 320px;
+    height: 42px;
+    border: #A094D4 solid 5px;
+}
+
+.form-select-sm:focus {
+    outline: none;
+    border: #22F122 5px solid;
+}
+
+/* Estilização dos botões */
+
+.btn-primary {
+    color: #170F1F;
+    background: rgba(34, 241, 34, 0.82);
+    box-shadow: 0px 0px 7px 7px #BF7EFF;
+    filter: blur(0.5px);
+    border: none;
+    border-radius: 50px;
+}
+.btn-primary:hover {
+    background: rgba(191, 126, 255);
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+}
+
+.btn-primary:focus {
+    background: rgba(191, 126, 255);
+    border: none;
+    box-shadow: 0px 0px 10px 10px #22F122;
+    color: #170F1F;
+}
+
+/* Estilo para os cards */
+
+.card-st {
+    background-color: #22F122;
+}
+
+/* Estilo para os botões da tabela */
+
+.editedel {
+    width: 20%;
+}
