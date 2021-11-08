@@ -71,10 +71,8 @@ body{
     border: 2px solid;
 }
  
-
-
 .carrinho{
-    margin-top:150px!important;
+    margin-top:75px!important;
     margin-bottom:  50px!important;
 }
 
@@ -124,4 +122,23 @@ footer{
 }
 .marB{
     margin-bottom: 70px;
+}
+
+.dropdown-menu {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    text-align: right;
+}
+.dropdown-item {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    padding-right: 25px!important;
+    text-decoration: underline;
+}
+.dropdown-item:hover {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
 }

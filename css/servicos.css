@@ -39,6 +39,25 @@ body{   /********************** BODY ********************/
     border: 2px solid;
 }
 
+.dropdown-menu {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    text-align: right;
+}
+.dropdown-item {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    padding-right: 25px!important;
+    text-decoration: underline;
+}
+.dropdown-item:hover {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+}
+
 /************************* Links da Nav **************************/
 .nav-link {
     justify-content: right;
