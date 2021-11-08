@@ -188,14 +188,12 @@ function aparecerCarrinho() {
             <div class="col-lg-3 col-md-4 col-sm-6 ">
                
                 <div class="mt-2 text-end p-2">
-                    <h6>Valor unidade: R$ ${item.preco},00</h6>
+                    <h6>Valor un: R$ ${item.preco},00</h6>
                     <h6>Total: R$ ${item.quantidade * item.preco},00</h6>
                 </div> 
                 <div class="input-group mb-3 p-3">
-                   <span>Quantidade: ${item.quantidade}</span>
-                    <button type="button" onclick="apagarProduto(${item.id})" class="btn btn-outline-danger apagar" id="delete">
-                        <i class="bi bi-trash" ></i>
-                    </button>
+                   <h6>Quantidade: ${item.quantidade}</h6>
+                    
                 </div>
             </div>
         </div>
