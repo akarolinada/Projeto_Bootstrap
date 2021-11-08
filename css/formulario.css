@@ -227,3 +227,22 @@ main {
 .thead {
     background-color: #ded4e9 !important;
 }
+
+.dropdown-menu {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    text-align: right;
+}
+.dropdown-item {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+    padding-right: 25px!important;
+    text-decoration: underline;
+}
+.dropdown-item:hover {
+    background-color: #BF7EFF;
+    color: #170F1F;
+    border: none;
+}
