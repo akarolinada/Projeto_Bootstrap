@@ -219,17 +219,20 @@ footer{
 
 /************************************************************************ RESPONSIVIDADE ********************************************************************/
 
-@media (max-width: 950px) {
-   
-}
-
-@media(max-width: 899px){
-     .banner-main {
-        background-image: URL(../img/home/banner-md.png);
+@media (max-width: 980px) {
+    .banner-main {
+        background-image: URL(../img/home/hd-md.png);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
+    .rowNav {
+        height: 50vh;
+    }
+}
+
+@media(max-width: 899px){
+     
     .social {
         padding-bottom: 20px;
     }
