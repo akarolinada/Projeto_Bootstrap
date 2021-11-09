@@ -398,6 +398,36 @@ footer{
     margin-left: 3%;
 }
 
+/* RESPONSIVIDADE XX-SMALL */
+@media (max-width: 575px) {
+    .ico-nome {
+        top: 20%;
+        font-size: 3.3vw !important;
+    }
+    .video-game-button, .bi-caret-left-fill {
+        zoom: 75%;
+    }
+    .card-title {
+        font-size: 5vw;
+    }
+    .card-subtitle {
+        color: transparent
+    }
+    .cardMulheres div:last-of-type {
+        padding-top: 65% !important;
+    }
+    .card-desc {
+        font-size: 2.5vw !important;
+        margin-left: 5%;
+        margin-top: 5% !important;
+        margin-right: 5% !important;
+        margin-bottom: 5%;
+    }.fundoMulheres {
+        background-image: url(../img/img_institucional/fundo-1.png);
+    }
+    
+}
+
 /* RESPONSIVIDADE X-SMALL */
 @media (max-width: 576px) {
     .player-card{
@@ -407,14 +437,9 @@ footer{
         font-size: 2.2vw;
     }
     .carousel {
-        background-image: url(../img/img_institucional/fundo-4.png);
+        background-image: url(../img/img_institucional/fundo-1.png);
     }
-    .img_sn {
-        padding-left: 10%;
-    }
-    .video-game-button {
-        /* margin-bottom: 1px; */
-        /* border-radius: 0.75em */     
+    .video-game-button {    
         line-height: 1.2em;
         width: 1.2em;
     }
@@ -438,10 +463,17 @@ footer{
     #nossaMissao h1, #sobreNos h2 {
         font-size: 3.4vw;
     }
+    .carousel-item img {
+        zoom: 60%
+    }
+    .carousel-caption {
+        margin-top: 50%;
+        margin-left: 9%;
+    }
 }
 
 /* RESPONSIVIDADE SMALL */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .ico-nome {
         font-size: 2vw;
     }
@@ -479,7 +511,7 @@ footer{
         font-size: 1.5vw;
     }
     .carousel {
-        background-image: url(../img/img_institucional/fundo-1.png);
+        background-image: url(../img/img_institucional/fundo-2.png);
     }
     .img_sn {
         zoom: 70%
@@ -503,6 +535,7 @@ footer{
     .cardMulheres div:last-of-type {
         padding-top: 13%;
         padding-left: 25%;
+        zoom: 85%;
     }
     .card-subtitle {
         margin-top: 10%;
