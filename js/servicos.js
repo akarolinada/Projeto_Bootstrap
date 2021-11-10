@@ -67,6 +67,27 @@ let produto = [
         descricao: 'metroidShirt',
         preco: 25,
         quantidade: 0
+    },
+    {
+        id: 10,
+        nome: 'Garrafinha - Lady Dimitrescu',
+        descricao: 'residentEvil',
+        preco: 35,
+        quantidade: 0
+    },
+    {
+        id: 11,
+        nome: 'Copo - PacMan',
+        descricao: 'pacmanCup',
+        preco: 30,
+        quantidade: 0
+    },
+    {
+        id: 12,
+        nome: 'Camiseta - Atari',
+        descricao: 'atariShirt',
+        preco: 45,
+        quantidade: 0
     }
 ];
 
@@ -219,7 +240,7 @@ function apagarProduto(nome) {
 
     // let produtoNum = localStorage.getItem('carrinhoNum');
     // let carrinhoTotal = localStorage.getItem("total");
-    
+
 
     let itemsCarrinho = JSON.parse(localStorage.getItem('produtoNoCarrinho'))
 
@@ -231,29 +252,29 @@ function apagarProduto(nome) {
 
     let apagar = document.getElementById('listaCarrinho');
     console.log(nome)
-  
-        for (let i = 0; i<val.length; i++) {
 
-            if (val[i].id == nome) {
-                console.log(val[i].id, nome)
+    for (let i = 0; i < val.length; i++) {
 
-                val.splice(i, 1);
+        if (val[i].id == nome) {
+            console.log(val[i].id, nome)
 
-                console.log(val)
-            }
+            val.splice(i, 1);
+
+            console.log(val)
         }
+    }
     console.log(val)
     onloadCarrinhoNum();
     aparecerCarrinho();
-    
+
     // let contador = localStorage.getItem(carrinhoNum);
 
     // localStorage.setItem('carrinhoNum', carrinhoNum - contador);
 
     localStorage.setItem('produtoNoCarrinho', JSON.stringify(val));
     aparecerCarrinho();
-    
-      
+
+
 }
 
 
@@ -320,30 +341,27 @@ $(document).ready(function () {
         auto: true,
         loop: true,
         speed: 1000,
-        autoWidth: true,
-        thumbItem: 10,
-        // currentPagerPosition: 'middle',
+        thumbItem: 6,
         responsive: [
             {
                 breakpoint: 800,
                 settings: {
                     item: 2,
                     slideMove: 1,
-                    slideMargin: 6,
+                    slideMargin:0,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    item: 1,
+                    item: 2,
                     slideMove: 1
                 }
             }
         ]
-    }
-    
-    
-    );
+    });
+
+
 
     // animação da seta
     setInterval(function () { $('#pointer').fadeTo('fast', 0).fadeTo('fast', 1).fadeTo('fast', 0).fadeTo('fast', 1); }, 2500);

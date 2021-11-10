@@ -11,6 +11,7 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src="https://code.jquery.com/jquery-1.11.0.js"
         integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js" ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script src="../js/lightslider.js"></script>
@@ -24,7 +25,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-xxxl navbar-dark p-md-3 bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand text-white text-decoration-none" href="home.html"><img src="../img/logo.png" alt=""></a>
+                <a class="navbar-brand text-white" href="home.html"><img src="../img/logo.png" alt=""></a>
                 <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -69,22 +70,24 @@
     <!-- ************Carousel******************** -->
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="banner my-5">
+        <div class="banner my-5 carrossel">
             <h1 class="text-center">Destaques</h1>
             <ul id="lightSlider" class="text-center">
-                <li><img src="../img/imgServico/hzd.png" alt="" class="carouselImg">
-                    <h6>Copo - Aloy (HZD)</h6>
+                <li ><img src="../img/imgServico/hzd.png" alt="" class="carouselImg">
+                    <div class="lslider">
+                        <h6>Copo - Aloy (HZD)</h6>
+                    </div>
                 </li>
-                <li><img src="../img/imgServico/garrafinhaEllie.png" alt="" class="carouselImg">
-                    <h6>Garrafinha Inox - Ellie (TLOU)</h6>
+                <li class="lslider"><img src="../img/imgServico/garrafinhaEllie.png" alt="" class="carouselImg">
+                    <h6>Garrafinha Inox - Ellie</h6>
                 </li>
-                <li><img src="../img/imgServico/metroidShirt.png" alt="" class="carouselImg">
+                <li class="lslider"><img src="../img/imgServico/metroidShirt.png" alt="" class="carouselImg">
                     <h6>Camiseta Metroid</h6>
                 </li>
-                <li><img src="../img/imgServico/cardenoLIS.png" alt="" class="carouselImg">
-                    <h6>Bloco de notas - Life is Strange</h6>
+                <li class="lslider"><img src="../img/imgServico/cardenoLIS.png" alt="" class="carouselImg">
+                    <h6>Caderno - Life is Strange</h6>
                 </li>
-                <li><img src="../img/imgServico/pacmanCup.png" alt="" class="carouselImg">
+                <li class="lslider text-center"><img src="../img/imgServico/pacmanCup.png" alt="" class="carouselImg">
                     <h6>Copo - PacMan</h6>
                 </li>
             </ul>
@@ -109,9 +112,9 @@
         </nav>
 
         <!-- *********Filtro********* -->
-
+        <h6 class="flex-wrap text-center">Filtro:</h6>
         <div class="container d-flex text-center justify-content-center">
-            <h6>Filtro:</h6>
+            
             <div class="form-check form-check-inline filtro">
                 <input type="checkbox" class="mx-2" id="caneca" value="caneca" />Canecas
                 <input type="checkbox" class="mx-2" id="camiseta" value="camiseta" />Camisetas
@@ -177,6 +180,19 @@
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5 m-auto center productItem" data-category="copo">
+                    <div class="card cardI" style="width: 15rem;">
+                        <img src="../img/imgServico/pacmanCup.png" class="card-img-top" onclick="mostrarModal11()">
+                        <div class="card-body">
+                            <h5 class="card-title">Copo <p>PacMan</p>
+                            </h5>
+                            <h5 class="card-text">R$ 30,00</h5>
+                            <a href="#" class="btn btn-primary produto text-center adc-carrinho">Adicionar carrinho
+                                <img src="../img/imgServico/bit.png" style="width: 20px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="col-lg-3 col-md-6 col-sm-12 mt-5 m-auto center productItem" data-category="copo">
@@ -198,19 +214,6 @@
                         <div class="card-body">
                             <h5 class="card-title">Caneca The Legend of Zelda</h5>
                             <h5 class="card-text">R$ 20,00</h5>
-                            <a href="#" class="btn btn-primary produto text-center adc-carrinho">Adicionar carrinho
-                                <img src="../img/imgServico/bit.png" style="width: 20px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 mt-5 m-auto center productItem" data-category="caneca">
-                    <div class="card cardI" style="width: 15rem;">
-                        <img src="../img/imgServico/mugLux.png" class="card-img-top" onclick="mostrarModal8()">
-                        <div class="card-body">
-                            <h5 class="card-title">Caneca Wild Rift - Lux</h5>
-                            <h5 class="card-text">R$ 25,00</h5>
                             <a href="#" class="btn btn-primary produto text-center adc-carrinho">Adicionar carrinho
                                 <img src="../img/imgServico/bit.png" style="width: 20px;">
                             </a>
@@ -258,13 +261,12 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12 mt-5 m-auto center productItem" data-category="copo">
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5 m-auto center productItem" data-category="caneca">
                     <div class="card cardI" style="width: 15rem;">
-                        <img src="../img/imgServico/pacmanCup.png" class="card-img-top" onclick="mostrarModal11()">
+                        <img src="../img/imgServico/mugLux.png" class="card-img-top" onclick="mostrarModal8()">
                         <div class="card-body">
-                            <h5 class="card-title">Copo <p>PacMan</p>
-                            </h5>
-                            <h5 class="card-text">R$ 30,00</h5>
+                            <h5 class="card-title">Caneca Wild Rift - Lux</h5>
+                            <h5 class="card-text">R$ 25,00</h5>
                             <a href="#" class="btn btn-primary produto text-center adc-carrinho">Adicionar carrinho
                                 <img src="../img/imgServico/bit.png" style="width: 20px;">
                             </a>
@@ -272,13 +274,14 @@
                     </div>
                 </div>
 
+
                 <div class="col-lg-3 col-md-6 col-sm-12 mt-5 m-auto center productItem" data-category="camisa">
                     <div class="card cardI" style="width: 15rem;">
                         <img src="../img/imgServico/atariShirt.png" class="card-img-top" onclick="mostrarModal12()">
                         <div class="card-body">
                             <h5 class="card-title">Camiseta <p>Atari</p>
                             </h5>
-                            <h5 class="card-text">R$ 39,90</h5>
+                            <h5 class="card-text">R$ 45,00</h5>
                             <a href="#" class="btn btn-primary produto text-center adc-carrinho">Adicionar carrinho
                                 <img src="../img/imgServico/bit.png" style="width: 20px;">
                             </a>
